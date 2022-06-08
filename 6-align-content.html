@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - Align content</title>
+  <style>
+    body{
+      background-color: black;
+      color: aliceblue;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .container{
+      height: 400px;
+      width: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      border: 2px solid white;
+    }
+    .item{
+      background-color: firebrick;
+      padding: 0 5px;
+      margin: 5px;
+      flex: 1;
+      text-align: center;
+      color: white;
+      border: 2px solid lightcoral
+    }
+    .stretch{
+      align-content: stretch;
+    }
+    .center{
+      align-content: center;
+    }
+    .flex-start{
+      align-content: flex-start;
+    }
+    .flex-end{
+      align-content: flex-end;
+    }
+    .space-around{
+      align-content: space-around;
+    }
+    .space-between{
+      align-content: space-between;
+    }
+  </style>
+</head>
+<body>
+<h2>stretch</h2>
+  <div class="container stretch">
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio</div>
+    <div class="item">vel aspernatur, sequi enim laudantium quos! Autem reiciendis quod sint doloremque nulla,</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet.</div>
+  </div>
+
+  <h2>center</h2>
+  <div class="container stretch center">
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio</div>
+    <div class="item">vel aspernatur, sequi enim laudantium quos! Autem reiciendis quod sint doloremque nulla,</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet.</div>
+  </div>
+
+  <h2>flex-start</h2>
+  <div class="container stretch flex-start">
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+  </div>
+
+  <h2>flex-end</h2>
+  <div class="container stretch flex-end">
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+  </div>
+
+  <h2>space-around</h2>
+  <div class="container stretch space-around">
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+  </div>
+
+  <h2>space-between</h2>
+  <div class="container stretch space-between">
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+    <div class="item">Minima et ratione distinctio </div>
+  </div>
+</body>
+</html>
